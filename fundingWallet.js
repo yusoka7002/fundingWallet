@@ -12,7 +12,7 @@ const fundedAccountAddress = fundedAccount.address;
 
 const amountToSend = web3.utils.toWei('0.00025', 'ether');
 
-const accounts = JSON.parse(fs.readFileSync('accounts.json'));
+const accounts = JSON.parse(fs.readFileSync('wallets.json'));
 
 const fundAccounts = async () => {
     for (let account of accounts) {
